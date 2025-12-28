@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Seguridad - NewCooltura Informada",
+  title: "Seguridad Ciudadana Chile | NewCooltura Informada",
   description: "Comisarias, emergencias, tipos de delitos, calculadora de prescripcion y derechos del detenido en Chile",
+  keywords: ["seguridad ciudadana", "comisarias", "delitos", "derechos detenido", "emergencias"],
+  openGraph: {
+    title: "Seguridad Chile - NewCooltura Informada",
+    description: "Comisarias, emergencias y derechos",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
